@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(81, 224, 205); 
+    background-color: rgb(81, 224, 205);
+    min-width: 380px; 
 }
 
 body > h1 {
@@ -9,7 +10,6 @@ body > h1 {
 }
 
 #main {
-    display: grid;
     justify-content: center;
     background-color: white;
     font-family: 'Raleway', Helvetica, sans-serif;    
@@ -21,6 +21,7 @@ body > h1 {
 }
 
 #description {
+    padding-top: 20px;
     text-align: center;
     font-size: 18px;
 }
@@ -41,7 +42,7 @@ body > h1 {
 
 .input-field {
     height: 20px;
-    width: 280px;
+    width: 100%;
     padding: 5px;
     margin: 10px;
     border: 1px solid #c0c0c0;
@@ -91,30 +92,37 @@ ul {
     height: 50px;
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 800px) {
     .input-field {
-      width: 80%;
+      width: 90%;
     }
     select {
       width: 90%;
     }
+    .rightCol {
+        width:40%;
+        margin: auto;
+        }
   }
   
-  @media screen and (max-width: 520px) {
-    .labels {
-      width: 100%;
-      text-align: left;
+  @media screen and (max-width: 600px) {
+    .label {
+    width: 100%;
+    text-align: center;
     }
-    .rightTab {
-      width: 80%;
-      float: left;
+    .rightCol {
+    display: flex;
+    width:80%;
+    margin: auto;
+    justify-content: center;
     }
-    .input-field {
-      width: 100%;
+
+    #description{
+        display: block;
+        width: 80%;
+        margin: auto;
     }
-    select {
-      width: 100%;
-    }
+}
 
 
 
