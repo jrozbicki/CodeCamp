@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(81, 224, 205); 
+}
+
+body > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+#main {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Raleway', Helvetica, sans-serif;    
+    width: 75%;
+    margin: auto;
+    max-width: 700px;
+    border-radius: 5px;
+    min-width: 320px;
+}
+
+#description {
+    text-align: center;
+    font-size: 18px;
+}
+
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    margin-top: 15px;    
+    vertical-align: top;
+}
+
+.rightCol {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
+    margin-left: -35px; 
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;    
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+#textarea {
+    height: 50px;
+}
+
+@media screen and (max-width: 833px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+
+
+
+
+
+
+
