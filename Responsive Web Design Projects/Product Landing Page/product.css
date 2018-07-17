@@ -1,0 +1,288 @@
+body {
+    background-color: #eee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;    
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+}
+
+#header-img {
+    height: 100%;
+    max-width: 340px;
+    margin-right: auto;
+}
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+    width: 100px;
+}
+
+#form{
+    display: grid;
+    padding-top: 50px;
+    grid-template-areas:
+    "top"
+    "email"
+    "button";
+
+}
+
+#top-sentence {
+    text-align: center;
+    grid-area: top;
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#email {
+    grid-area: email;
+    width: 300px;
+    margin: 5px auto 15px auto;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 2px; 
+}
+
+#submit {
+    grid-area: button;
+    width: 150px;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgb(255, 196, 0);
+    border-radius: 2px;
+    border: 0px; 
+}
+
+#features {
+    margin: 30px 0px;
+    display: grid;
+    grid-template-areas: 
+    ". icon1 header1 ."
+    ". icon1 text1 ."
+
+    ". icon2 header2 ."
+    ". icon2 text2 ."
+
+    ". icon3 header3 ."
+    ". icon3 text3 .";
+    grid-template-columns: 0.5fr 70px 5fr 0.5fr;
+    grid-template-rows: 25px 45px 25px 45px 25px 45px;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+
+}
+
+.icon-container {   
+    color: darkorange;
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+
+.description-header {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#icon1 {grid-area: icon1;}
+#icon2 {grid-area: icon2;}
+#icon3 {grid-area: icon3;}
+#header1 {grid-area: header1;}
+#header2 {grid-area: header2;}
+#header3 {grid-area: header3;}
+#text1 {grid-area: text1;}
+#text2 {grid-area: text2;}
+#text3 {grid-area: text3;}
+
+
+#video {
+    display: flex;
+    align-self: center;
+}
+
+#pricing {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+    ". offer1 offer2 offer3 .";
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.offer {
+    max-width: 250px;
+    min-width: 230px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#offer1 {grid-area: offer1;}
+#offer2 {grid-area: offer2;}
+#offer3 {grid-area: offer3;}
+
+
+#video {
+    width: 720px; 
+    height: 400px ;
+    margin: 20px auto;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    margin: 30px auto 0px auto;
+    padding: 10px;
+    bottom: 0px;
+    background-color: #d1d1d1;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+}
+
+.offer > h2{
+    background-color: rgb(182, 182, 182);
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.offer > h1{    
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.offer > div{    
+    margin: 0px;
+    padding: px 0px;
+    text-align: center;
+}
+
+.offer > button {
+    margin: 30px 43px !important; 
+  
+}
+
+footer > div {
+    text-align: right;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+    #pricing {
+        grid-template-areas: 
+        ". offer1 ."
+        ". offer2 ."
+        ". offer3 .";
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr 250px 1fr; 
+        justify-items: center;
+        
+    }
+
+    #offer1 {grid-area: offer1;}
+    #offer2 {grid-area: offer2;}
+    #offer3 {grid-area: offer3;}
+
+    .offer {
+        width: 250px;
+    }
+
+    #video {
+        width: 426px; 
+        height: 240px ;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 615px){
+    #header {
+        display: block;
+        height: 150px;
+    }
+
+    #header-img {
+        margin: 5px auto 5px auto;
+        max-width: 350px;
+        height: 50px;
+        display: flex;
+    }
+
+    #nav-bar > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        list-style: none;
+    }
+
+    #nav-bar > ul > li {
+        padding: 5px;
+    }
+
+    #form {
+        padding-top: 130px;        
+    }
+
+    #top-sentence {
+        margin: 10px auto;
+    }
+
+    #features {
+    grid-template-areas: 
+    ". header1 ."
+    ". text1 ."
+
+    ". header2 ."
+    ". text2 ."
+
+    ". header3 ."
+    ". text3 .";
+    grid-template-columns:0.5fr 6fr 0.5fr;
+    grid-template-rows: 25px auto 25px auto 25px auto;
+    grid-row-gap: 10px;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .description-header {
+        text-align: center;
+    }
+
+    .description-text {
+        margin: auto;
+    } 
+}
